@@ -4,7 +4,7 @@ describe "Static Pages" do
   
 	describe "Home Page" do
 		it "should have the content 'Twit'" do
-			visit '/static_pages/home'
+			visit root_path
 			page.should have_selector('h1', :text => 'Twit')
 		end
 	end
